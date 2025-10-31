@@ -5,3 +5,6 @@ frontend/node_modules
 .azure/
 __pycache__/
 .ipynb_checkpoints/
+# Protege logs e cache temporário
+*.log
+tmp/

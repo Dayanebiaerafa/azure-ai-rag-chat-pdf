@@ -324,7 +324,16 @@ export const Answer = ({ answer, onCitationClicked, onExectResultClicked }: Prop
             </Stack.Item>
           )}
           <Stack.Item className={styles.answerDisclaimerContainer}>
-            <span className={styles.answerDisclaimer}>AI-generated content may be incorrect</span>
+            <span
+              className={styles.answerDisclaimerContainer}
+              style={{
+                color: '#0ea5e9',
+                fontWeight: 500,
+                fontFamily: 'Segoe UI, sans-serif',
+              }}
+            >
+              💡 Resposta gerada pelo assistente IA <strong>Dayane DataLab</strong>.
+            </span>    
           </Stack.Item>
           {!!answer.exec_results?.length && (
             <Stack.Item onKeyDown={e => (e.key === 'Enter' || e.key === ' ' ? toggleIsRefAccordionOpen() : null)}>
